@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+  if (localStorage.getItem('token') == null) {
+    window.location.replace("./")
+  } else {
+    window.location.replace("./home.html")
+  }
+
   $('#login-form').submit(function(e) {
     e.preventDefault();
 

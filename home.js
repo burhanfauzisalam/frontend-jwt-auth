@@ -14,7 +14,7 @@ $(document).ready(function(){
               $('#name').text(response.parents.p_name)
             },
             error: function(xhr, status, error) {
-                window.location.replace("index.html")
+                window.location.replace("../")
             }
         });
     }

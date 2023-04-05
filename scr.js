@@ -6,7 +6,7 @@ $(document).ready(function () {
               `);
   const logout = $("#logout").click(() => {
     localStorage.clear();
-    window.location.replace("/");
+    window.location.replace("./");
   });
 
   if (localStorage.getItem("token") == null) {
@@ -39,7 +39,7 @@ $(document).ready(function () {
               const token = localStorage.getItem("token");
               console.log(response.parents.p_email);
               console.log(token);
-              window.location.replace("/");
+              window.location.replace("./");
               welcome;
               $("#name").text(response.parents.p_name);
               logout;
